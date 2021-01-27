@@ -1,0 +1,60 @@
+*{
+	box-sizing: border-box;
+}
+
+body, html {
+	min-height: 100vh;
+	margin: 0;
+
+	font-family: 'Righteous', cursive;
+
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	border-bottom: 1px solid black;
+	padding: 6rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	background-image: url(../imgs/iconfinder.png);
+	width: 6rem;
+	height: 6rem;
+	background-size: 100%;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+footer {
+	display: grid;
+	grid-template-columns: 300px 300px;
+	grid-gap: 2rem;
+}
+
+.credits {
+	text-align: right;
+}
