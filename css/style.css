@@ -17,6 +17,12 @@ img {
 body {
 	display: flex;
 	flex-direction: column;
+
+	background: #8A2387;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	color: white;
 }
 
 main {
@@ -27,26 +33,39 @@ main {
 }
 
 header {
-	border-bottom: 1px solid black;
-	padding: 6rem;
+	border-bottom: 0.5em solid white;
 
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
 .logo {
-	background-image: url(../imgs/iconfinder.png);
+	/*background-image: url(../imgs/iconfinder.png);*/
+	/*background-blend-mode: difference;*/
 	width: 6rem;
 	height: 6rem;
 	background-size: 100%;
+
+	margin: 20px;
 }
 
 nav ul {
 	list-style: none;
-	padding: 0;
+	padding: 2rem;
 	margin: 0;
 	display: flex;
+
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-size: 2rem;
+}
+
+.joke {
+	font-size: 6rem;
+
+	/*cursor: url(../imgs/iconfinder.png), auto;*/
+	/*FIGURE OUT CURSOR*/
 }
 
 footer {
